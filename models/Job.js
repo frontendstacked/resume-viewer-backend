@@ -5,6 +5,12 @@ var mongoose = require('mongoose'),
  * Job History
  */
 var JobSchema = new Schema({
-    org: String
+    organization: String,
+    position: String,
+    dateStarted: Date,
+    dateEnded: Date,
+    dateline: String,
+    description: String
+
 });
 module.exports = mongoose.model('Job', JobSchema);
